@@ -1,0 +1,75 @@
+$ cd task5/
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash list
+stash@{0}: On add: removed two html files
+stash@{1}: On add: calc function
+stash@{2}: On add: removed two html files
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash show
+ about.html | 3 ---
+ index.html | 3 ---
+ 2 files changed, 6 deletions(-)
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash save "my_stash"
+Saved working directory and index state On add: my_stash
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash show
+ new.py | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git status
+On branch add
+Your branch is up to date with 'origin/add'.
+
+nothing to commit, working tree clean
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash show -p
+diff --git a/new.py b/new.py
+new file mode 100644
+index 0000000..e1e1bdd
+--- /dev/null
++++ b/new.py
+@@ -0,0 +1,13 @@
++def add(a,b):
++     return a+b
++
++     def sub(a,b):
++          pass
++
++          def  multiply(a,b):
++            pass
++
++            def add(a,b):
++                pass
++
++
+\ No newline at end of file
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+
+
+
+ cd task5/
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash list
+stash@{0}: On add: removed two html files
+stash@{1}: On add: calc function
+stash@{2}: On add: removed two html files
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash show
+ about.html | 3 ---
+ index.html | 3 ---
+ 2 files changed, 6 deletions(-)
+
+253604@Varun-PC MINGW64 /D/vcs/task5 (add)
+$ git stash save "my_stash"
+Saved working directory and index state On add: my_stash
+
